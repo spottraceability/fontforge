@@ -101,6 +101,23 @@ AM_MAINTAINER_MODE([enable])
 AC_USE_SYSTEM_EXTENSIONS
 
 #--------------------------------------------------------------------------
+#
+# Checks for programs.
+
+AC_PROG_AWK
+AC_PROG_CC
+AC_PROG_CC_C99
+AM_PROG_CC_C_O
+gl_EARLY
+AC_PROG_CPP
+AC_PROG_GREP
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_MKDIR_P
+AC_PROG_SED
+
+#--------------------------------------------------------------------------
 # automake 1.12 requires AM_PROG_AR but automake < 1.11.2 doesn't recognize it.
 m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
 
@@ -175,23 +192,6 @@ libjpeg_url="http://en.wikipedia.org/wiki/Libjpeg"
 # the old website, which some while ago was hijacked by androids from
 # beyond the orbit of Neptune.
 libtiff_url="http://en.wikipedia.org/wiki/Libtiff"
-
-#--------------------------------------------------------------------------
-#
-# Checks for programs.
-
-AC_PROG_AWK
-AC_PROG_CC
-AC_PROG_CC_C99
-AM_PROG_CC_C_O
-gl_EARLY
-AC_PROG_CPP
-AC_PROG_GREP
-AC_PROG_INSTALL
-AC_PROG_LN_S
-AC_PROG_MAKE_SET
-AC_PROG_MKDIR_P
-AC_PROG_SED
 
 #--------------------------------------------------------------------------
 # Required for building FontForge package, plus we use PKG_CHECK_MODULES in
